@@ -1,0 +1,52 @@
+.dark {
+    $page-bg: #252526;
+    $text-color: $white;
+
+    background-color: $page-bg;
+    color: $text-color;
+
+    --main-bg-color: #252625;
+    --title-1: #fff;
+    --title-2: #fff;
+    --btn-outline-color: #fff;
+    --btn-outline-border-color: #fff;
+    --project-card-bg: #000;
+    --project-card-text: #fff;
+    --box-shadow: 0px 12px 3px 0px rgb(0 0 0 / 25%);
+
+
+    .blog-post {
+        background-color: $page-bg;
+
+        .blog-title {
+            .blog-post-link {
+                color: white;
+            }
+        }
+
+        // Адаптивная линия разделитель после каждой статьи, кроме последней
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: white; // Цвет линии разделителя
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            .blog-post {
+                // Изменить размеры линии разделителя на мобильных устройствах
+                &::after {
+                    bottom: -20px;
+                }
+            }
+        }
+    }
+}
