@@ -1,17 +1,19 @@
 import React from "react";
+import linkedInLogo from "../assets/img/icons/linkedIn.svg";
+import gitHubLogo from "../assets/img/icons/gitHub.svg";
 
 const socialLinks = [
   {
     id: 1,
     title: "github",
-    img: "/src/assets/img/icons/gitHub.svg",
+    img: `${gitHubLogo}`,
     url: "https://github.com/Habstrakt",
   },
   {
     id: 2,
     title: "linkedin",
-    img: "/src/assets/img/icons/linkedIn.svg",
-    url: "#",
+    img: `${linkedInLogo}`,
+    url: "https://www.linkedin.com/in/gribanov-pavel",
   },
 ];
 
